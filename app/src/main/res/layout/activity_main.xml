@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hinh1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <Button
+        android:id="@+id/buttonPrevious"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/imageview"
+        android:text="Previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_alignParentEnd="true"
+        android:id="@+id/buttonNext"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/imageview"
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Random"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/buttonPrevious"
+        android:id="@+id/buttonRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_alignParentEnd="true"
+        android:text="Auto next"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/buttonRandom"
+        android:id="@+id/buttonAutoNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginStart="20dp"
+        android:text="Auto Previous"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/buttonRandom"
+        android:id="@+id/buttonAutoPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonPauseAuto"
+        android:layout_below="@id/buttonRandom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="Pause Auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
